@@ -8,6 +8,7 @@
 // font-family: 'Roboto', sans-serif;
 $blackColor: #2c2c2c;
 $orangeYellowColor: #f6a823;
+$whiteBackgroundColor: #f0efed;
 $rustRedColor: #a82706;
 $blueAccentColor: #1fccdf;
 
@@ -16,9 +17,18 @@ $blueAccentColor: #1fccdf;
     color: $customColor;
     padding: 10px 20px;
 }
+@mixin basicHFonts($customFontSize){
+    font-family: 'Roboto', sans-serif;
+    font-size: $customFontSize;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 @import 'normalize';
 @import 'header';
+@import 'about';
+@import 'favourites';
 
 
 
@@ -29,11 +39,11 @@ body {
     line-height: 32px;
     letter-spacing: 1px;
 }
-
 .wrapper {
-    max-width: 960px;
+    max-width: 1280px;
     width: 70%;
     margin: 0 auto;
+    border: 1px solid red;
 }
 img {
     max-width: 100%;
@@ -48,4 +58,20 @@ ul {
 .flexRow{
     display: flex;
     justify-content: center;
+}
+button {
+    color: $blackColor;
+    background-color: $blueAccentColor;
+    border: none;
+    padding: 12px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h2 {
+    @include basicHFonts(42px);
+}
+h3 {
+    @include basicHFonts(32px);
 }

@@ -2,11 +2,11 @@
     font-family: 'Lora', serif;
     font-weight: 700;
     font-size: $fontSize;
+    text-transform: uppercase;
 }
-
 header {
     background: $orangeYellowColor;
-    padding: 20px;
+    padding: 20px 0;
         .navLink{
             @include basicLink($blackColor);
             font-weight: 700;
@@ -20,18 +20,44 @@ header {
         .navLogo{
             @include fontSetting(40px);
         }
-        .hero h1 {
-            @include fontSetting(80px);
+        .hero {
+            margin: 50px auto 0;
+            h1 {
+                @include fontSetting(9rem);
+            }
+            .heroText {
+                width: 65%;
+                position: relative;
+                // border: 1px solid green;
+                margin: 120px 0;
+            }
+            .heroImg{
+                position: relative;
+                width: 430px;
+            }
+            .heroImg img {
+                height: 600px;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: -15px;
+                z-index: 20;
+                
+            }
+            .heroImg div {
+                width: 100%;
+                height: 600px;
+                background: rgb(255, 255, 255);
+                position: absolute;
+                top: 15px;
+                right: 0px;
+                z-index: 10;
+            }
+            .heroText img {
+                width: 24%;
+                position: absolute;
+                top: -15px;
+                left: -44px;
+            }
         }
-        .heroText {
-            position: relative;
-            border: 1px solid green;
-        }
-        .heroText img {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    
-
 }
