@@ -1,8 +1,7 @@
 .dogContent {
-    background-color: hotpink;
+    // background-color: hotpink;
     position: relative;
     // padding: 40px 0;
-
     .redSquareBckg{
         width: 50%;
         height: 46vh;
@@ -28,6 +27,21 @@
         height: 45vh;
         object-fit: cover;
         margin: -60px auto auto -30px;
+    }
+
+}
+.travelContent{
+    position: relative;
+    .yellowRectBckg{
+        width: 50%;
+        height: 46vh;
+        background-color: $orangeYellowColor;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        text-align: right;
+        // z-index: 5;
     }
 
 }
