@@ -1,0 +1,37 @@
+@mixin fontSetting($fontSize: 40px){
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: $fontSize;
+}
+
+header {
+    background: $orangeYellowColor;
+    padding: 20px;
+        .navLink{
+            @include basicLink($blackColor);
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 29px;
+            letter-spacing: 1px;
+        }
+        .active {
+            color: #f0efed;
+        }
+        .navLogo{
+            @include fontSetting(40px);
+        }
+        .hero h1 {
+            @include fontSetting(80px);
+        }
+        .heroText {
+            position: relative;
+            border: 1px solid green;
+        }
+        .heroText img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+
+}
