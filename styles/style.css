@@ -456,7 +456,7 @@ header .hero .heroText img {
 
 .journey {
   background-color: #f0efed;
-  min-height: 60vh;
+  padding: 70px 0;
 }
 .journey .wrapper {
   display: -webkit-box;
@@ -467,14 +467,40 @@ header .hero .heroText img {
           justify-content: space-between;
 }
 .journey .wrapper .journImg {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  height: 300px;
   background-color: #f54260;
+  position: relative;
+}
+.journey .wrapper .journImg .shadowYellow {
+  background-color: #f6a823;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+}
+.journey .wrapper .journImg img {
+  position: relative;
 }
 .journey .wrapper .journTxt {
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   border: 1px solid pink;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body {
@@ -522,6 +548,11 @@ button {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  background-color: #f6a823;
 }
 
 h2 {
@@ -546,4 +577,17 @@ h3 {
   background-position: center;
   height: 40vh;
   width: 100%;
+}
+
+.gallery {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery img {
+  width: calc(100% / 3 - 18px);
 }
