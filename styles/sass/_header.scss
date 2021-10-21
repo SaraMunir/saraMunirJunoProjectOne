@@ -6,8 +6,14 @@
 }
 header {
     background: $orangeYellowColor;
-    padding: 20px 0;
-        .navLink{
+    nav {
+        background: $orangeYellowColor;
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .navLink{
+            background: $orangeYellowColor;
             @include basicLink($blackColor);
             font-weight: 700;
             font-size: 20px;
