@@ -1,7 +1,7 @@
 .dogContent {
     // background-color: hotpink;
     position: relative;
-    // padding: 40px 0;
+    padding: 20px 0;
     .redSquareBckg{
         width: 50%;
         height: 46vh;
@@ -26,22 +26,39 @@
         width: 50%;
         height: 45vh;
         object-fit: cover;
-        margin: -60px auto auto -30px;
+        margin: -70px auto auto -30px;
     }
 
 }
 .travelContent{
     position: relative;
     .yellowRectBckg{
-        width: 50%;
-        height: 46vh;
+        // width: 50%;
+        width: calc(100% / 2 - 30px);
+        height: 45vh;
         background-color: $orangeYellowColor;
         position: absolute;
-        top: 0;
+        top: 55px;
         right: 0;
         bottom: 0;
         text-align: right;
         // z-index: 5;
     }
+    .travelContentMain{
+        position: relative;
+        .travelContentText {
+            width: 50%;
+            padding: 0 100px 80px 0;
+            text-align: right;
+        }
+        
+    }
+    img {
+            width: 50%;
+            
+            height: 45vh;
+            object-fit: cover;
+            margin-top: 30px;
+        }
 
 }

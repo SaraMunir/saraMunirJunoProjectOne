@@ -29,12 +29,14 @@ $blueAccentColor: #1fccdf;
 @import 'header';
 @import 'about';
 @import 'favourites';
+@import 'iconGrids';
+@import 'journey';
 
 
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #2c2c2c;
     line-height: 32px;
     letter-spacing: 1px;
@@ -74,4 +76,11 @@ h2 {
 }
 h3 {
     @include basicHFonts(32px);
+}
+.chairs{
+    background-image: url(../styles/assets/home-image-4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
 }

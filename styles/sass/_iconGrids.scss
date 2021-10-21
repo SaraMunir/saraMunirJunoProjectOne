@@ -1,0 +1,33 @@
+.icondGrid{
+    background-color: $whiteBackgroundColor;
+    margin-top: -20px;
+    padding-top: 80px;
+}
+
+.flexGrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .iconGrdItem{
+        display: flex;
+        padding-right: 40px;
+    }
+}
+.iconGrdItem{
+    width: 50%;
+    margin: 0 auto;
+    .gridLogo{
+        background-color: $orangeYellowColor;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 23px 20px 0 0;
+    
+    }
+
+}

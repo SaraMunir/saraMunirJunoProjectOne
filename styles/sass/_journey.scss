@@ -1,0 +1,16 @@
+.journey{
+    background-color: $whiteBackgroundColor;
+    min-height: 60vh;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        .journImg{
+            flex-basis: 35%;
+            background-color:rgb(245, 66, 96) ;
+        }
+        .journTxt{
+            flex-basis: 65%;
+            border: 1px solid pink;
+        }
+    }
+}
