@@ -19,7 +19,7 @@
         <nav>
             <ul class="wrapper flexRow">
                 <li><a class="navLink" href="index.html">HOME</a></li>
-                <li><a class="navLink" href="#about">ABOUT</a></li>
+                <li><a class="navLink" href="index.html#about">ABOUT</a></li>
                 <li><a class="navLink navLogo" href="index.html">SOPHIE</a></li>
                 <li><a class="navLink active" href="blogPost.html">BLOG</a></li>
                 <li><a class="navLink" href="contact.html">CONTACT</a></li>
@@ -51,42 +51,56 @@
                     </div>
                 </aside>
                 <article>
-                    <div>
+                    <div class="articleItemsCard brdrBttm">
+                        <h3>Why I became a blogger</h3>
+                        <h5>Monday October 8th, 2018 by <a href="index.html">Sophie Barlow</a></h5>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
                     </div>
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
+                    <div class="commentsSection">
+                        <div class="articleItemsCard flexCard">
+                            <img src="./styles/assets/blog-image-3.jpg" alt="man named jeremy">
+                            <div>
+                                <h4 class="cardPostedDate">Tuesday October 9th, 2018 by Jeremy</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis, accusamus, maiores aut quas, delectus doloremque corporis deserunt optio iure similique sunt consequatur sapiente illo non voluptatum quis ullam perspiciatis!</p>
+                            </div>
+                        </div>
+                        <div class="articleItemsCard flexCard">
+                            <img src="./styles/assets/blog-image-4.jpg" alt="woman named julia">
+                            <div>
+                                <h4 class="cardPostedDate">Wednesday October 10th, 2018 by Julia</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis, accusamus, maiores aut quas, delectus doloremque corporis deserunt optio iure similique sunt consequatur sapiente illo non voluptatum quis ullam perspiciatis!</p>
+                            </div>
+                        </div>
+                        <div class="articleItemsCard flexCard">
+                            <img src="./styles/assets/blog-image-4.jpg" alt="woman named julia">
+                            <div>
+                                <h4 class="cardPostedDate">Wednesday October 10th, 2018 by Julia</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis, accusamus, maiores aut quas, delectus doloremque corporis deserunt optio iure similique sunt consequatur sapiente illo non voluptatum quis ullam perspiciatis!</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
+                    <div class="commentForm">
+                        <form action="submit">
+                            <!-- <div>
+                            </div> -->
+                            <label for="Name" hidden>Your Name:</label>
+                            <input class="gridItm1" type="text" name="Name" id="Name" placeholder="Name">
+                            <label for="userEmail" hidden>Email</label>
+                            <input class="gridItm2" type="email" placeholder="Email address" id="userEmail">
+                            <!-- <div>
+                            </div> -->
+
+                            
+                            <!-- <label for="specialInstructions">Any special instructions?</label> -->
+                            <textarea class="gridItm3" name="specialInstructions" id="specialInstructions" cols="30" rows="10" placeholder="Comment"></textarea>
+                            <button class="gridItm4">Post Comment</button>
+                        </form>
+        
                     </div>
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ipsum repudiandae consequuntur praesentium porro unde assumenda, soluta repellendus modi ut explicabo laborum iusto itaque? Illum quasi a dignissimos cupiditate ipsa.</p>
-                    </div>
-    
                 </article>
             </div>
         </div>

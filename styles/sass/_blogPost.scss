@@ -22,6 +22,9 @@
 .blogContent{
     display: flex;
     justify-content: space-between;
+    .brdrBttm{
+        border-bottom: 3px solid $orangeYellowColor;
+    }
     aside {
         flex-basis: 35%;
         div {
@@ -58,8 +61,59 @@
     }
     article {
         flex-basis: 63%;
-        background-color: white;
-        padding: 20px;
+        .articleItemsCard{
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            img {
+                object-fit: contain;
+                margin-right: 20px;
+            }
+            .cardPostedDate{
+                margin: 10px 0;
+                color: #285e64;
+                font-style: italic;
+            }
+        }
+        .flexCard{
+            display: flex;
+            align-items: flex-start;
+        }
+        .articleItemsCard:nth-child(2n) {
+            border-bottom: 3px solid $orangeYellowColor;
 
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            // grid-template-row: 1fr 1fr;
+            grid-auto-flow: row;
+            gap: 20px;
+            
+
+        }
+        input[type=text], input[type=email], textarea{
+            width: 100%;
+            border: none;
+            background: white;
+            padding: 25px;
+            
+        }
+        textarea::placeholder, input[type=text]::placeholder,input[type=email]::placeholder{
+            font-style: italic;
+        }
+        // .gridItm1 {
+        //     grid-row-start: 1;
+        //     grid-row-end: 2;
+        //   }
+        .gridItm3 {
+            grid-column-start: 1;
+        grid-column-end: 3;
+          }
+        .gridItm4 {
+            grid-column-start: 1;
+        grid-column-end: 3;
+          }
     }
 }

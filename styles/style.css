@@ -544,6 +544,9 @@ header .hero .heroText img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.blogContent .brdrBttm {
+  border-bottom: 3px solid #f6a823;
+}
 .blogContent aside {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
@@ -581,8 +584,67 @@ header .hero .heroText img {
 .blogContent article {
   -ms-flex-preferred-size: 63%;
       flex-basis: 63%;
+}
+.blogContent article .articleItemsCard {
   background-color: white;
-  padding: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.blogContent article .articleItemsCard img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 20px;
+}
+.blogContent article .articleItemsCard .cardPostedDate {
+  margin: 10px 0;
+  color: #285e64;
+  font-style: italic;
+}
+.blogContent article .flexCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.blogContent article .articleItemsCard:nth-child(2n) {
+  border-bottom: 3px solid #f6a823;
+}
+.blogContent article form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+.blogContent article input[type=text], .blogContent article input[type=email], .blogContent article textarea {
+  width: 100%;
+  border: none;
+  background: white;
+  padding: 25px;
+}
+.blogContent article textarea::-webkit-input-placeholder, .blogContent article input[type=text]::-webkit-input-placeholder, .blogContent article input[type=email]::-webkit-input-placeholder {
+  font-style: italic;
+}
+.blogContent article textarea::-moz-placeholder, .blogContent article input[type=text]::-moz-placeholder, .blogContent article input[type=email]::-moz-placeholder {
+  font-style: italic;
+}
+.blogContent article textarea:-ms-input-placeholder, .blogContent article input[type=text]:-ms-input-placeholder, .blogContent article input[type=email]:-ms-input-placeholder {
+  font-style: italic;
+}
+.blogContent article textarea::-ms-input-placeholder, .blogContent article input[type=text]::-ms-input-placeholder, .blogContent article input[type=email]::-ms-input-placeholder {
+  font-style: italic;
+}
+.blogContent article textarea::placeholder, .blogContent article input[type=text]::placeholder, .blogContent article input[type=email]::placeholder {
+  font-style: italic;
+}
+.blogContent article .gridItm3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.blogContent article .gridItm4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 body {
