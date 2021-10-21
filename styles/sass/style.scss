@@ -32,6 +32,7 @@ $blueAccentColor: #1fccdf;
 @import 'iconGrids';
 @import 'journey';
 @import 'blogPost';
+@import 'contactPage';
 
 
 
@@ -106,4 +107,9 @@ footer {
     p{
         margin: 0;
     }
+}
+.myCard{
+    background-color: white;
+    padding: 20px;
+    // margin-bottom: 25px;
 }

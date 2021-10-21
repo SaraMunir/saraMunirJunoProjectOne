@@ -1,0 +1,51 @@
+.contactHero{
+    background: url(../styles/assets/contact-image-1.jpg);
+    width: 100%;
+    height: 43vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    h1 {
+        font-family: 'Lora', serif;
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: -15px;
+        z-index: 10;
+    }
+}
+// ul {
+//     display: grid;
+// }
+// $blueAccentColor: #1fccdf;
+// $orangeYellowColor: #f6a823;
+
+.contactSect{
+    background-color: $whiteBackgroundColor;
+    padding: 100px 0;
+    aside {
+
+        ul {
+            width: 60%;
+            display: grid;
+            margin-left: 0;
+            // grid-template-columns: 1fr ;
+            // grid-template-row: 1fr 1fr;
+            grid-auto-flow: column;
+            gap: 5px;
+            li {
+                list-style: none;
+                padding: 0;
+                a {
+                    color: $orangeYellowColor;
+                }
+                a:hover, a:focus{
+                    color: $blueAccentColor;
+                }
+    
+            }
+        }
+
+    }
+}
