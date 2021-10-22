@@ -144,3 +144,13 @@ footer {
         }
     }
 }
+@media (max-width: 650px){
+    .gallery{
+        img {
+            width: calc(100% / 2 - 10px);
+        }
+        img:nth-child(2) {
+            display: none;
+            }
+    }
+}
