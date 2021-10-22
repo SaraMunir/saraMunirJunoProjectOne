@@ -55,10 +55,79 @@
     }
     img {
             width: 50%;
-            
             height: 45vh;
             object-fit: cover;
             margin-top: 30px;
         }
 
+}
+
+@media (max-width: 950px){
+    .dogContent{
+        .redSquareBckg {
+            width: 45%;
+            }
+        .dogContentMain{
+            img {
+                width: 45%;
+                object-position: right;
+            }
+        }
+        .dogContentText {
+            padding: 45px 0 0 20px;
+        }
+    }
+    .travelContent{
+        img {
+            width: 45%;
+        }
+        .travelContentMain{
+            .travelContentText {
+                padding: 0 56px 80px 0;
+                }
+        }
+    }
+}
+@media (max-width: 850px){
+    .dogContent{
+        .dogContentMain {
+            img {
+                margin: -70px auto auto 18px;
+                object-position: -278px 0px;
+            }
+        }
+    }
+}
+@media (max-width: 650px){
+    .dogContent{
+        .redSquareBckg {
+            width: 89%;
+            }
+        .dogContentText {
+            width: 100%;
+            }
+        .dogContentMain {
+            flex-direction: column;
+            img {
+                width: 100%;
+                margin: -70px auto auto 18px;
+                object-position: -112px;
+            }
+        }
+    }
+    .travelContent{
+        .yellowRectBckg {
+            width: 89%;
+            }
+        .travelContentMain {
+            flex-direction: column-reverse;
+            .travelContentText {
+                padding: 38px 6px 80px 0;
+                width: 100%;
+                }
+            }
+        img {
+            width: 100%;
+            }
+    }
 }

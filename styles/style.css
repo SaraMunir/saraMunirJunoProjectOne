@@ -246,7 +246,6 @@ header nav {
   margin: 0 auto;
 }
 header .navLink {
-  background: #f6a823;
   text-decoration: none;
   color: #2c2c2c;
   padding: 10px 20px;
@@ -303,11 +302,7 @@ header .hero .heroTextParnt {
 }
 header .hero .heroImg {
   position: relative;
-  -ms-flex-preferred-size: 430px;
-      flex-basis: 430px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 430px;
 }
 header .hero .heroImg img {
   height: 600px;
@@ -338,13 +333,68 @@ header .hero .heroText img {
   header .hero h1 {
     font-family: "Lora", serif;
     font-weight: 700;
-    font-size: 6.5rem;
+    font-size: 7.5rem;
     text-transform: uppercase;
   }
   header .hero .heroText img {
     width: 24%;
     top: 0;
     left: -44px;
+  }
+}
+@media (max-width: 850px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  header .hero {
+    height: 49vh;
+  }
+  header .hero .heroText {
+    z-index: 30;
+    top: 123px;
+    left: -61px;
+  }
+  header .hero .heroText img {
+    width: 24%;
+    top: 51px;
+    left: -10px;
+  }
+  header .hero h1 {
+    background: #f6a823;
+    padding: 46px 20px;
+  }
+  header .hero .heroImg {
+    position: absolute;
+    right: 0;
+    width: 350px;
+  }
+  header .hero .heroImg img {
+    height: 500px;
+    left: -33px;
+  }
+  header .hero .heroImg div {
+    height: 500px;
+    top: 40px;
+    right: 0;
+  }
+}
+@media (max-width: 650px) {
+  header .hero .heroText {
+    left: -35px;
+    top: 141px;
+  }
+  header .hero .heroText img {
+    left: 6px;
+    top: 59px;
+  }
+  header .hero h1 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+    background: #f6a823;
+    padding: 46px 20px;
   }
 }
 .about {
@@ -410,6 +460,70 @@ header .hero .heroText img {
   margin-top: 30px;
 }
 
+@media (max-width: 950px) {
+  .dogContent .redSquareBckg {
+    width: 45%;
+  }
+  .dogContent .dogContentMain img {
+    width: 45%;
+    -o-object-position: right;
+       object-position: right;
+  }
+  .dogContent .dogContentText {
+    padding: 45px 0 0 20px;
+  }
+
+  .travelContent img {
+    width: 45%;
+  }
+  .travelContent .travelContentMain .travelContentText {
+    padding: 0 56px 80px 0;
+  }
+}
+@media (max-width: 850px) {
+  .dogContent .dogContentMain img {
+    margin: -70px auto auto 18px;
+    -o-object-position: -278px 0px;
+       object-position: -278px 0px;
+  }
+}
+@media (max-width: 650px) {
+  .dogContent .redSquareBckg {
+    width: 89%;
+  }
+  .dogContent .dogContentText {
+    width: 100%;
+  }
+  .dogContent .dogContentMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dogContent .dogContentMain img {
+    width: 100%;
+    margin: -70px auto auto 18px;
+    -o-object-position: -112px;
+       object-position: -112px;
+  }
+
+  .travelContent .yellowRectBckg {
+    width: 89%;
+  }
+  .travelContent .travelContentMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .travelContent .travelContentMain .travelContentText {
+    padding: 38px 6px 80px 0;
+    width: 100%;
+  }
+  .travelContent img {
+    width: 100%;
+  }
+}
 .icondGrid {
   background-color: #f0efed;
   margin-top: -20px;
@@ -568,7 +682,13 @@ header .hero .heroText img {
      object-fit: cover;
 }
 .blogContent aside .sophiesProfCard h4 {
-  margin: 5px 0;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.blogContent aside .sophiesProfCard p {
+  margin: 10px 0;
 }
 .blogContent aside .sophiesProfCard ul {
   padding-left: 20px;
@@ -580,6 +700,11 @@ header .hero .heroText img {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+.blogContent aside .sophiesProfCard a {
+  text-decoration: none;
+  color: #285e64;
+  font-weight: 700;
 }
 .blogContent article {
   -ms-flex-preferred-size: 63%;
@@ -647,6 +772,28 @@ header .hero .heroText img {
   grid-column-end: 3;
 }
 
+@media (max-width: 850px) {
+  .blogHero h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 750px) {
+  .blogHero {
+    height: 25vh;
+  }
+
+  .blogContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .gridItm1, .gridItm2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 .contactHero {
   background: url(../styles/assets/contact-image-1.jpg);
   width: 100%;
@@ -691,6 +838,11 @@ header .hero .heroText img {
   color: #1fccdf;
 }
 
+@media (max-width: 850px) {
+  .contactHero h1 {
+    font-size: 3rem;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -715,6 +867,10 @@ ul {
 }
 ul li {
   list-style: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .flexRow {
@@ -792,4 +948,28 @@ footer p {
 .myCard {
   background-color: white;
   padding: 20px;
+}
+
+@media (max-width: 850px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 750px) {
+  .show {
+    display: none;
+  }
+
+  .hamburger:hover .navMenu, .hamburger:focus .navMenu {
+    height: 600px;
+  }
+
+  .hidden {
+    display: block;
+  }
+  .hidden .flexRow {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }

@@ -44,7 +44,13 @@
                 object-fit: cover;
             }
             h4 {
-                margin: 5px 0;
+                margin: 10px 0;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            p{
+                margin: 10px 0;
             }
             ul {
                 padding-left: 20px;
@@ -56,6 +62,11 @@
                     width: 1em;
                     margin-left: -1em;
                 }
+            }
+            a {
+                text-decoration: none;
+                color: #285e64;
+                font-weight: 700;
             }
 
         }
@@ -117,4 +128,29 @@
         grid-column-end: 3;
           }
     }
+}
+
+
+@media (max-width: 850px) {
+    
+    .blogHero{
+        h1 {
+            font-size: 3rem;
+
+        }
+    }
+}
+@media (max-width: 750px) {
+    .blogHero{
+        height: 25vh;
+    }
+    .blogContent{
+        // display: flex;
+        flex-direction: column;
+    }
+    .gridItm1, .gridItm2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
 }

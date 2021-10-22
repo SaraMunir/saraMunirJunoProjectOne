@@ -59,6 +59,9 @@ ul {
         list-style: none;
     }
 }
+.hidden{
+    display: none;
+}
 .flexRow{
     display: flex;
     justify-content: center;
@@ -112,4 +115,32 @@ footer {
     background-color: white;
     padding: 20px;
     // margin-bottom: 25px;
+}
+
+
+
+
+@media (max-width: 850px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+@media (max-width: 750px) {
+    .show{
+        display: none;
+    }
+    .hamburger:hover .navMenu, .hamburger:focus .navMenu{
+
+            height: 600px;
+
+
+
+    }
+    
+    .hidden{
+        display: block;
+        .flexRow{
+            justify-content: space-between;
+        }
+    }
 }

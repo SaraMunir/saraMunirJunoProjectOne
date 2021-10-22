@@ -25,7 +25,6 @@
     background-color: $whiteBackgroundColor;
     padding: 100px 0;
     aside {
-
         ul {
             width: 60%;
             display: grid;
@@ -48,4 +47,18 @@
         }
 
     }
+}
+
+@media (max-width: 850px) {
+    
+    .contactHero{
+        h1 {
+            font-size: 3rem;
+
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
 }

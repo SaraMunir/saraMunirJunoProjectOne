@@ -16,11 +16,17 @@
 </head>
 <body>
     <header>
-        <nav class="wrapper">
-            <ul class="flexRow">
+        <nav>
+            <div class="hidden">
+                <ul class="flexRow">
+                    <li><a class="navLink navLogo" href="index.html">SOPHIE</a></li>
+                    <li><a class="navLink hamburger" href="#"><i class="fas fa-bars fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <ul class="flexRow show navMenu">
                 <li><a class="navLink active" href="index.html">HOME</a></li>
                 <li><a class="navLink" href="#about">ABOUT</a></li>
-                <li><a class="navLink navLogo" href="index.html">SOPHIE</a></li>
+                <li><a class="navLink navLogo hideInMobile" href="index.html">SOPHIE</a></li>
                 <li><a class="navLink" href="blogPost.html">BLOG</a></li>
                 <li><a class="navLink" href="contact.html">CONTACT</a></li>
             </ul>

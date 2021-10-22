@@ -13,7 +13,7 @@ header {
         margin: 0 auto;
     }
     .navLink{
-            background: $orangeYellowColor;
+            // background: $orangeYellowColor;
             @include basicLink($blackColor);
             font-weight: 700;
             font-size: 20px;
@@ -50,8 +50,7 @@ header {
             }
             .heroImg{
                 position: relative;
-                flex-basis: 430px;
-                flex-grow: 1;
+                width: 430px;
             }
             .heroImg img {
                 height: 600px;
@@ -84,12 +83,70 @@ header {
     header {
         .hero {
             h1 {
-                @include fontSetting(6.5rem);
+                @include fontSetting(7.5rem);
             }
             .heroText img {
                 width: 24%;
                 top: 0;
                 left: -44px;
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .wrapper {
+        width: 90%;
+    }
+    header {
+        .hero {
+            height: 49vh;
+            .heroText{
+                z-index: 30;
+                top: 123px;
+                left: -61px;
+                img {
+                    width: 24%;
+                    top: 51px;
+                    left: -10px;
+                }
+            }
+            h1 {
+                background: #f6a823;
+                padding: 46px 20px;
+            }
+            .heroImg {
+                position: absolute;
+                right: 0;
+                width: 350px;
+                img {
+                    height: 500px;
+                    left: -33px;
+                    }
+                div {
+                    height: 500px;
+                    top: 40px;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 650px) {
+    header {
+        .hero {
+            .heroText {
+                left: -35px;
+                top: 141px;
+                img {
+                    left: 6px;
+                    top: 59px;
+                    }
+                }
+            h1 {
+                @include fontSetting(5rem);
+                background: #f6a823;
+                padding: 46px 20px;
             }
         }
     }
