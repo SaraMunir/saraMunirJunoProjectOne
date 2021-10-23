@@ -388,6 +388,10 @@ header .hero .heroText img {
   }
 }
 @media (max-width: 650px) {
+  nav .linkContainer {
+    margin-right: 15px;
+  }
+
   header .hero .heroText {
     left: -35px;
     top: 141px;
