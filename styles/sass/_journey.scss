@@ -96,12 +96,16 @@
                 }
                 .shadowYellow {
                     width: 108%;
+                    right: -22px;
                 }
             }
             .journTxt {
                 width: 100%;
                 margin-top: 35px;
                 align-items: center;
+                h2 {
+                    font-size: 39px;
+                }
                 p {
                     text-align: center;
                 }    

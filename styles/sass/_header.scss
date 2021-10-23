@@ -12,6 +12,9 @@ header {
         padding: 20px;
         margin: 0 auto;
     }
+    .hidden{
+        display: none;
+    }
     .navLink{
             // background: $orangeYellowColor;
             @include basicLink($blackColor);
@@ -132,8 +135,16 @@ header {
         }
     }
 }
+@media (max-width: 850px) {
+    header{
+        nav {
+            padding: 0px;
+        }
+    }
+}
 @media (max-width: 650px) {
     header {
+
         .hero {
             .heroText {
                 left: -35px;

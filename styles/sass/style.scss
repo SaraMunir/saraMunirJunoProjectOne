@@ -59,9 +59,7 @@ ul {
         list-style: none;
     }
 }
-.hidden{
-    display: none;
-}
+
 .flexRow{
     display: flex;
     justify-content: center;
@@ -119,7 +117,6 @@ footer {
 
 
 
-
 @media (max-width: 850px) {
     .wrapper {
         width: 90%;
@@ -127,21 +124,60 @@ footer {
 }
 @media (max-width: 750px) {
     .show{
-        display: none;
-    }
-    .hamburger:hover .navMenu, .hamburger:focus .navMenu{
-
-            height: 600px;
-
-
-
-    }
-    
-    .hidden{
         display: block;
-        .flexRow{
-            justify-content: space-between;
+    }
+    nav {
+        display: flex;
+        justify-content: end;
+        .hidden{
+            display: block;
         }
+    }
+    .hamburger{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        i {
+            cursor: pointer;
+        }
+    }
+    .navMenu{
+        width: 300px;
+        height: 0px;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        z-index: 40;
+        overflow: hidden;
+        transition: ease all .5s;
+
+        .navLink{
+            color: white;
+            padding: 29px 53px;
+            display: block;
+            border: 1px solid rgb(83, 83, 83);
+            background-color: #2c2c2c;
+        }
+        .active{
+            color: $orangeYellowColor;
+        }
+        .navLink:hover, .navLink:focus{
+            background-color: #3b3b3b;
+        }
+        .hideInMobile{
+            display: none;
+        }
+    }
+    .linkContainer{
+        display: inline-block;
+        justify-content: end;
+
+    }
+
+    
+    .linkContainer:hover .navMenu, .linkContainer:focus .navMenu{
+        height: 400px;
     }
 }
 @media (max-width: 650px){
@@ -152,5 +188,8 @@ footer {
         img:nth-child(2) {
             display: none;
             }
+    }
+    h3{
+        font-size: 25px;
     }
 }
