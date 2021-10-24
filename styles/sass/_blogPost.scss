@@ -15,7 +15,6 @@
         z-index: 10;
     }
 }
-
 .bloggingSect{
     background-color: $whiteBackgroundColor;
     padding: 100px 0;
@@ -86,6 +85,17 @@
                 color: #285e64;
                 font-style: italic;
             }
+            h5 {
+                font-style: italic;
+                font-weight: 500;
+                font-size: 1.1rem;
+            }
+            a {
+                text-decoration: none;
+                color: #285e64;
+                font-weight: 700;
+            }
+
         }
         .flexCard{
             display: flex;

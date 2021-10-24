@@ -817,6 +817,16 @@ header .hero .heroText img {
   color: #285e64;
   font-style: italic;
 }
+.blogContent article .articleItemsCard h5 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.blogContent article .articleItemsCard a {
+  text-decoration: none;
+  color: #285e64;
+  font-weight: 700;
+}
 .blogContent article .flexCard {
   display: -webkit-box;
   display: -ms-flexbox;
