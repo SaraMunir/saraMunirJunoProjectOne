@@ -1,5 +1,5 @@
 .contactHero{
-    background: url(../styles/assets/contact-image-1.jpg);
+    background: url(../assets/contact-image-1.jpg);
     width: 100%;
     height: 43vh;
     background-size: cover;
@@ -15,11 +15,6 @@
         z-index: 10;
     }
 }
-// ul {
-//     display: grid;
-// }
-// $blueAccentColor: #1fccdf;
-// $orangeYellowColor: #f6a823;
 
 .contactSect{
     background-color: $whiteBackgroundColor;

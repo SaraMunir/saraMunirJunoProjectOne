@@ -1,5 +1,6 @@
+
 .blogHero{
-    background: url(../styles/assets/blog-image-1.jpg);
+    background-image: url(../assets/blog-image-1.jpg);
     width: 100%;
     height: 43vh;
     background-size: cover;
@@ -15,6 +16,8 @@
         z-index: 10;
     }
 }
+
+
 .bloggingSect{
     background-color: $whiteBackgroundColor;
     padding: 100px 0;
@@ -30,7 +33,6 @@
         div {
             position: sticky;
             top: 0;
-            // bottom: 0;
             overflow-y: auto;
         }
         .sophiesProfCard{

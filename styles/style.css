@@ -716,7 +716,7 @@ header .hero .heroText img {
   }
 }
 .blogHero {
-  background: url(../styles/assets/blog-image-1.jpg);
+  background-image: url(../assets/blog-image-1.jpg);
   width: 100%;
   height: 43vh;
   background-size: cover;
@@ -897,7 +897,7 @@ header .hero .heroText img {
   }
 }
 .contactHero {
-  background: url(../styles/assets/contact-image-1.jpg);
+  background: url(../assets/contact-image-1.jpg);
   width: 100%;
   height: 43vh;
   background-size: cover;
@@ -1018,7 +1018,7 @@ h3 {
 }
 
 .chairs {
-  background-image: url(../styles/assets/home-image-4.jpg);
+  background-image: url(../assets/home-image-4.jpg);
   background-size: cover;
   background-position: center;
   height: 40vh;
