@@ -156,7 +156,7 @@ header {
                 }
             .heroText {
                 left: -35px;
-                top: 141px;
+                top: 138px;
                 img {
                     left: 6px;
                     top: 59px;
@@ -166,6 +166,15 @@ header {
                 @include fontSetting(5rem);
                 background: #f6a823;
                 padding: 46px 20px;
+            }
+        }
+    }
+}
+@media (max-width: 380px){
+    header {
+        .hero {
+            .heroText{
+                left: 0px;
             }
         }
     }

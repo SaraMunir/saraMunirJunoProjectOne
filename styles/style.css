@@ -397,7 +397,7 @@ header .hero .heroText img {
   }
   header .hero .heroText {
     left: -35px;
-    top: 141px;
+    top: 138px;
   }
   header .hero .heroText img {
     left: 6px;
@@ -410,6 +410,11 @@ header .hero .heroText img {
     text-transform: uppercase;
     background: #f6a823;
     padding: 46px 20px;
+  }
+}
+@media (max-width: 380px) {
+  header .hero .heroText {
+    left: 0px;
   }
 }
 .about {
@@ -718,7 +723,7 @@ header .hero .heroText img {
     text-align: center;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 460px) {
   .journey .wrapper .journImg .shadowYellow {
     width: 106%;
     right: -10px;
