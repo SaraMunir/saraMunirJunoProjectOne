@@ -392,6 +392,9 @@ header .hero .heroText img {
     margin-right: 15px;
   }
 
+  header .hero .heroImg {
+    top: 49px;
+  }
   header .hero .heroText {
     left: -35px;
     top: 141px;
@@ -713,6 +716,18 @@ header .hero .heroText img {
   }
   .journey .wrapper .journTxt p {
     text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .journey .wrapper .journImg .shadowYellow {
+    width: 106%;
+    right: -10px;
+  }
+  .journey .wrapper .journTxt h2 {
+    font-size: 37px;
+    text-align: center;
+    line-height: 41px;
+    margin-bottom: 12px;
   }
 }
 .blogHero {

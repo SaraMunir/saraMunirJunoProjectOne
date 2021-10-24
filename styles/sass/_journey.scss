@@ -114,3 +114,23 @@
         }
     }
 }
+@media (max-width: 360px){
+    .journey{
+        .wrapper {
+            .journImg{
+                .shadowYellow {
+                    width: 106%;
+                    right: -10px;
+                    }
+            }
+            .journTxt {
+                h2 {
+                    font-size: 37px;
+                    text-align: center;
+                    line-height: 41px;
+                    margin-bottom: 12px;
+                    }
+            }
+        }
+    }
+}
