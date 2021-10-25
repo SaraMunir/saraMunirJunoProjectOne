@@ -170,7 +170,7 @@ header {
         }
     }
 }
-@media (max-width: 380px){
+@media (max-width: 420px){
     header {
         .hero {
             .heroText{
@@ -178,4 +178,20 @@ header {
             }
         }
     }
+}
+@media (max-width: 320px){
+    header {
+        .hero {
+            h1{
+                font-size: 4rem;
+            }
+            .heroImg{
+                right: 0;
+                img {
+                    left: 0px;
+                }
+            }
+        }
+    }
+
 }

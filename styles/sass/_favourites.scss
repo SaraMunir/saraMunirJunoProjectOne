@@ -131,3 +131,14 @@
             }
     }
 }
+@media (max-width: 320px){
+    .dogContent{
+        .dogContentMain{
+            img {
+                object-position: right;
+                margin: -70px auto auto -1px;
+                object-fit: cover;
+            }
+        }
+    }
+}
