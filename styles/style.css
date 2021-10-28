@@ -538,7 +538,7 @@ header .hero .heroText img {
   }
   .dogContent .dogContentMain img {
     width: 100%;
-    margin: -70px auto auto 18px;
+    margin: -70px auto auto 0px;
     -o-object-position: -112px;
        object-position: -112px;
   }
