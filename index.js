@@ -3,13 +3,10 @@ form.addEventListener('submit', function(e){
     e.preventDefault()
     console.log('did something work?')
     
-
-
     let userName = document.querySelector('#Name').value;
     let userComment = document.querySelector('#Comment').value;
-    const warningPost = document.createElement('p')
-    const warningContainer =document.querySelector('.warningCntr')
-    
+    const warningPost = document.createElement('p');
+    const warningContainer =document.querySelector('.warningCntr');
     
     if (userName ===""){
         document.querySelector('#Name').focus();
@@ -32,10 +29,14 @@ form.addEventListener('submit', function(e){
         const newSubDivDatePosted = document.createElement('h4')
         const newSubDivParagraph = document.createElement('p')
         const d = new Date;
-        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"];
-        const todaysDate = `${dayNames[d.getDate()]} ${monthNames[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+        const monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November","December"];
+        var s = ["th", "st", "nd", "rd"];
+        let n = d.getDate()
+        let v = n % 100;
+        let ordinal = n + (s[(v - 20) % 10] || s[v] || s[0])
+        const todaysDate = `${dayNames[d.getDate()]} ${monthNames[d.getMonth()]} ${ordinal}, ${d.getFullYear()}`;
+
         newDiv.className = "articleItemsCard flexCard";
         newSubDivDatePosted.className = "cardPostedDate";
         newDivImg.src = "https://via.placeholder.com/92"
