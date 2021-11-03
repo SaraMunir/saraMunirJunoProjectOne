@@ -123,8 +123,9 @@
             color: #f6a823;
             cursor: pointer;
         }
-        .fa-comments{
+        .fa-comments, .commentNum{
             color: rgba(146, 146, 146, 0.932);
+            font-size: 1.5rem;
         }
 
         form {

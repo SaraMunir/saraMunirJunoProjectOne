@@ -926,8 +926,9 @@ header .hero .heroText img {
   color: #f6a823;
   cursor: pointer;
 }
-.blogContent article .fa-comments {
+.blogContent article .fa-comments, .blogContent article .commentNum {
   color: rgba(146, 146, 146, 0.932);
+  font-size: 1.5rem;
 }
 .blogContent article form {
   display: grid;

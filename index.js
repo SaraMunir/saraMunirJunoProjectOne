@@ -1,14 +1,14 @@
 const form = document.querySelector('form')
 const likeBtn = document.querySelector('.likes')
+const commentNum = document.querySelector('.commentNum')
+let commentTotalNumb = 3
 form.addEventListener('submit', function(e){
     e.preventDefault()
     console.log('did something work?')
-    
     let userName = document.querySelector('#Name').value;
     let userComment = document.querySelector('#Comment').value;
     const warningPost = document.createElement('p');
     const warningContainer =document.querySelector('.warningCntr');
-    
     if (userName ===""){
         document.querySelector('#Name').focus();
         warningPost.className = "warning";
@@ -51,6 +51,8 @@ form.addEventListener('submit', function(e){
         commentSection.appendChild(newDiv);
         document.querySelector('#Name').value = '';
         document.querySelector('#Comment').value = '';
+        commentTotalNumb ++;
+        commentNum.innerText = commentTotalNumb;
     }
 })
 likeBtn.addEventListener('click', function(e){
