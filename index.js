@@ -46,13 +46,13 @@ form.addEventListener('submit', function(e){
         newDiv.appendChild(newSubDiv);
         newSubDiv.appendChild(newSubDivDatePosted);
         newSubDiv.appendChild(newSubDivParagraph);
-        newSubDivDatePosted.innerText= `${todaysDate} by ${userName}`
-        newSubDivParagraph.innerText= `${userComment}`
+        newSubDivDatePosted.textContent= `${todaysDate} by ${userName}`
+        newSubDivParagraph.textContent= `${userComment}`
         commentSection.appendChild(newDiv);
         document.querySelector('#Name').value = '';
         document.querySelector('#Comment').value = '';
         commentTotalNumb ++;
-        commentNum.innerText = commentTotalNumb;
+        commentNum.textContent = commentTotalNumb;
     }
 })
 likeBtn.addEventListener('click', function(e){
