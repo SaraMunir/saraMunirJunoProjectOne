@@ -107,6 +107,12 @@
             border-bottom: 3px solid $orangeYellowColor;
 
         }
+        .warning{
+            background: #a82706;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+        }
 
         form {
             display: grid;
@@ -127,18 +133,15 @@
         textarea::placeholder, input[type=text]::placeholder,input[type=email]::placeholder{
             font-style: italic;
         }
-        // .gridItm1 {
-        //     grid-row-start: 1;
-        //     grid-row-end: 2;
-        //   }
+
         .gridItm3 {
             grid-column-start: 1;
-        grid-column-end: 3;
-          }
+            grid-column-end: 3;
+        }
         .gridItm4 {
             grid-column-start: 1;
-        grid-column-end: 3;
-          }
+            grid-column-end: 3;
+            }
     }
 }
 

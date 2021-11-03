@@ -910,6 +910,12 @@ header .hero .heroText img {
 .blogContent article .articleItemsCard:nth-child(2n) {
   border-bottom: 3px solid #f6a823;
 }
+.blogContent article .warning {
+  background: #a82706;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
 .blogContent article form {
   display: grid;
   grid-template-columns: 1fr 1fr;
