@@ -1,4 +1,5 @@
 const form = document.querySelector('form')
+const likeBtn = document.querySelector('.likes')
 form.addEventListener('submit', function(e){
     e.preventDefault()
     console.log('did something work?')
@@ -35,6 +36,7 @@ form.addEventListener('submit', function(e){
         let n = d.getDate()
         let v = n % 100;
         let ordinal = n + (s[(v - 20) % 10] || s[v] || s[0])
+
         const todaysDate = `${dayNames[d.getDate()]} ${monthNames[d.getMonth()]} ${ordinal}, ${d.getFullYear()}`;
 
         newDiv.className = "articleItemsCard flexCard";
@@ -47,7 +49,10 @@ form.addEventListener('submit', function(e){
         newSubDivDatePosted.innerText= `${todaysDate} by ${userName}`
         newSubDivParagraph.innerText= `${userComment}`
         commentSection.appendChild(newDiv);
-        document.querySelector('#Name').value = ''
-        document.querySelector('#Comment').value = ''
+        document.querySelector('#Name').value = '';
+        document.querySelector('#Comment').value = '';
     }
+})
+likeBtn.addEventListener('click', function(e){
+    e.target.classList.toggle('fas');
 })

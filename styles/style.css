@@ -916,6 +916,19 @@ header .hero .heroText img {
   color: white;
   border-radius: 5px;
 }
+.blogContent article .likes {
+  font-size: 1.5rem;
+  color: #f6a823;
+  cursor: pointer;
+}
+.blogContent article .likes:hover {
+  font-size: 1.5rem;
+  color: #f6a823;
+  cursor: pointer;
+}
+.blogContent article .fa-comments {
+  color: rgba(146, 146, 146, 0.932);
+}
 .blogContent article form {
   display: grid;
   grid-template-columns: 1fr 1fr;
